@@ -1,9 +1,9 @@
-## Convert a number into words coding challenge
+# Convert a number into words coding challenge
 
-### Summary
+## Summary
 This project is a coding challenge for the Emerging Technology Talent Graduate Scheme at Ninety One.
 
-#### Problem
+### Problem
 Write a function that converts a given number into words. For example, given the number “1234” as input, return the
 output “one thousand, two hundred and thirty-four”.
 
@@ -17,6 +17,8 @@ numbers appropriately.
 
 ### How to run
 ```bash
+# Place input.txt in resources/fixtures
+
 mvn clean install
 mvn exec:java
 
@@ -31,7 +33,7 @@ mvn test
 4. Combine each group in to one sentence
 
 ### Design Choices
-### Data type for the number
+#### Data type for the number
 I initially used integers for the whole number but soon realised that numbers were reaching the limit of around two billion (max 2147483647). I switched to using long as it can hold numbers in the order of quintilian's (max 9223372036854775807). I think longs should be sufficient for this problem as numbers larger than the limit are rarely represented in words.
 
 #### Iteration vs Recursion
