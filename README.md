@@ -30,7 +30,7 @@ mvn test
 1. Use RegEx to find the number in the input line.
 2. Split the number into groups of 3 digits
 3. Turn each group into words using integer division and modulo 
-4. Combine each group in to one sentence
+4. Combine each group into one sentence
 
 ### Design Choices
 #### Data type for the number
